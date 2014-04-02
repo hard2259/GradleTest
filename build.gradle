@@ -1,3 +1,7 @@
-task hello << {
-	println "hello, ${System.properties['user.name']}"
+task hello {
+	description = "do hello!"
+
+	doLast {
+		println "hello world"
+	}
 }
